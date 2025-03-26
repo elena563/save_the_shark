@@ -1,0 +1,40 @@
+<header class="{{ if .IsHome }}white{{ else }}blue{{ end }}">
+    <div class="flex-head">
+        <a href="{{ .Site.BaseURL }}"><div id="logo">
+            <img src="{{ "images/icon.png" | relURL }}" alt="Save the Shark logo" height="32em" width="32em">
+            <h1>SAVE THE SHARK</h1>
+            <p>No-Profit <span>Organisation</span></p>
+        </div></a>
+        <div class="header-icons">
+            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #1b1c1e;"></i>
+            <label class="ham icon" for="ham">
+                <input type="checkbox" id="ham" onclick=show()>
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </label>
+        </div>
+    </div>
+    <nav>
+        <div id="menucont" class="{{ if .IsHome }}white{{ else }}blue{{ end }}">
+            <ul>
+                {{ if .IsHome }}
+                    <a href="#about">About</a> 
+                {{ else }}
+                    <a href="{{ "/" | relURL }}#about">About</a> 
+                {{ end }}
+            
+                <a href="/donate/">Donate</a>
+            
+                {{ if eq .RelPermalink "/donate/" }}
+                    <a href="#join"><span>Join us</span></a> 
+                {{ else }}
+                    <a href="{{ "donate/" | relURL }}#join"><span>Join us</span></a> 
+                {{ end }}
+            
+                <a href="/merch/"ì>Merch</a>
+                <a href="/discover/">Discover</a>
+            </ul>            
+        </div>
+    </nav>
+</header>

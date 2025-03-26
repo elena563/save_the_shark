@@ -1,0 +1,107 @@
+{{ define "main" }}  
+        <img src="{{ "images/wave-haikei3-cropped.svg" | relURL }}" class="svg" width= "100%" aria-hidden="true">
+        <div class="flex-cont container">
+            <main class="shark-culture">
+                <div style="margin-bottom: 0.7em;">
+                    <h3>Something about them...</h3>
+                    <p class="content2">Sharks are a superorder of cartilaginous predator fish of varying sizes that live predominantly in warmer marine 
+                        waters. <br>
+                    There are many species of sharks, but all have common characteristics:</p>
+                </div>
+                <section>
+                    <h4>Anatomy</h4>
+                    <div class="content2">
+                        <ul>
+                            <li>the size varies, but the body always has an <span>elongated</span> and tapered shape that allows swimming</li>
+                            <li>the skeleton consists mostly of light and flexible <span>cartilage</span>, which gives agility</li>
+                            <li><span>fins</span>, which stabilize and enable the animal to swim, are rigid, supported by cartilaginous rods and protein 
+                                fibers. They are of five different types: pectoral, pelvic (two), dorsal (one or two), caudal, and anal (one)</li>
+                            <li>teeth are arranged in parallel rows, and behind the first line, <span>several lines of spare teeth</span> continuously develop 
+                                throughout the shark's life, every 10 to 14 days</li>
+                            <li><span>scales</span>, of the same tissue as the teeth, increase in number rather than size as the shark grows, and have a regular 
+                                arrangement that reduces friction with the water</li>
+                            <li>the gills, used for <span>breathing</span>, are much more numerous than those of the common fish (5/7 slits on each side)</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h4>Senses</h4>
+                    <div class="content2">
+                        <ul>
+                            <li>smell is a very strong sense in sharks: some species can detect <span>one part per million of blood</span> in seawater. 
+                                It is mainly exploited for distant prey</li>
+                            <li><span>vision</span> is similar to that of other vertebrates, with the difference being a membrane behind the retina that improves 
+                                visibility underwater</li>
+                            <li><span>hearing</span> also appears to be very fine in these animals. On either side of the head are two openings leading to the 
+                                inner ear</li>
+                            <li>some receptors connected to the pores of the snout allow the shark to pick up <span>magnetic and electric fields</span>. It is a 
+                                very fine sense in these animals, used from short distances compared to the other senses</li>
+                            <li>the <span>lateral line</span> is a sense that allows it to recognize movements and vibrations in the water, composed of a series 
+                                of receptor organs arranged along the sides of the animal</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h4>Lifespan</h4>
+                    <p class="content2">It varies from species to species, but on average a shark lives <span>between 20 and 30 years</span>.</p>
+                </section>
+                <section>
+                    <h4>Reproduction</h4> 
+                    <p class="content2">The process of shark reproduction occurs sexually, when the male shark fertilizes the female by means of one of two hemipenes.
+                    This occurrence differs from species to species, but often the male bites the female to retain or court her.
+                    Unlike other fish, sharks do not produce a large number of offspring, but hover around a dozen. Depending on the species, the 
+                    shark can be oviparous, viviparous or ovoviviparous.</p>
+                </section>
+                <section id="classes">
+                    <h4>Classification</h4>
+                    <div class="content2">
+                        <p>Sharks are divided into eight orders, into which more than 500 different species are divided:</p>
+                        <ul>
+                            <li>Carcharhiniformes (requiem sharks, eight families)</li>
+                            <li>Heterodontiformes (bullhead sharks, one family)</li>
+                            <li>Hexanchiformes (two families)</li>
+                            <li>Lamniformes (seven families)</li>
+                            <li>Orectolobiformes (barbeled sharks, seven families)</li>
+                            <li>Squaliiformes (sharks, seven families)</li>
+                            <li>Squatiniformes (angel sharks, one family)</li>
+                            <li>Pristiophoridae (sawfish; one family)</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <div id="sidebar">
+                <div id="list">
+                    <h3>Let's get deeper with some species:</h3>
+                    <a href="#gwshark">Great white shark</a>
+                    <a href="#tshark">Tiger shark</a>
+                    <a href="#mkshark">Mako shark</a>
+                    <a href="#wshark">Whale shark</a>
+                    <a href="#bkshark">Basking shark</a>
+                    <a href="#lshark">Leuca shark</a>
+                    <a href="#wtrshark">White tip reef shark</a>
+                    <a href="#btrshark">Blacktip reef shark</a>
+                    <a href="#blshark">Bull Shark</a>
+                    <a href="#tsshark">Thresher shark</a>
+                    <a href="#ghshark">Greater hammerhead shark</a>
+                    <a href="#scshark">Spotted carpet shark</a>
+                </div>
+                <div class="cons-st">
+                    <h4>Conservation Status</h4>
+                    <p><span class="st-leg nt">NT</span> Near Threatened: </p><p>likely to become endangered in the near future</p>
+                    <p><span class="st-leg vul">VU</span> Vulnerable:</p><p>high risk of extinction in the wild</p>
+                    <p><span class="st-leg end">EN</span> Endangered:</p><p>higher risk of extinction in the wild</p>
+                    <p><span class="st-leg crit">CR</span> Critically Endangered:</p><p>highest risk of extinction in the wild</p>
+                </div>
+            </div>
+        </div>
+        <div class="species">
+            {{ range .Site.Data.sharks }}
+                {{ partial "sharks.html" . }}
+            {{ end }}
+            
+        <div class="text store-link">
+            <h3>Do you enjoy sharks more then before?</h3>
+            <p style="margin-bottom: 1rem;">Then go take a look at our absolutely <em>sharkly</em> gadget shop!</p>
+            <a href="{{ "merch/" | relURL }}" class="btn">Go Now</a>
+        </div>
+    {{end}}

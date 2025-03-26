@@ -1,0 +1,208 @@
+- id: gwshark
+  name: Great White Shark
+  image: images/white2.jpg
+  image_position: after
+  scientific_name: Carcharodon Carcharias
+  order: Lamniformes
+  length: 3-8 meters
+  weight: up to 2 tons
+  reproduction: ovoviviparous
+  habitat: temperate and tropical waters worldwide
+  status: VU
+  status_class: vul
+  description: The White Shark is considered the most dangerous shark to humans, although it actually much prefers a wide range of 
+                other prey such as turtles, seals or dolphins. It is in fact a very skilled hunter and swimmer, equipped with large, 
+                serrated teeth, which puts it at the top of the marine food chain surpassing even other sharks.
+  wave: images/wave-haikei-dark-cropped.svg
+
+- id: tshark
+  name: Tiger Shark
+  image: images/tigersh.jpg
+  image_position: before
+  scientific_name: Galeocerdo Cuvier
+  order: Carcharhiniformes
+  length: 3-6 meters
+  weight: up to 900 kg
+  reproduction: ovoviviparous
+  habitat: temperate and tropical waters worldwide
+  status: NT
+  status_class: nt
+  description: The Tiger Shark, so called because of the stripes on the sides of its body, is a fearsome predator with distinctive 
+                            comb-like teeth. It is a nocturnal hunter, preferring coastal waters and often approaching the shore in very shallow 
+                            water. However, it is a migratory fish and can also move offshore.
+  wave: images/wave-haikei-light-cropped.svg
+
+- id: mkshark
+  name: Mako Shark
+  image: images/mako.jpg
+  image_position: after
+  scientific_name: Isurus Oxyrinchus
+  order: Lamniformes
+  length: up to 4 meters
+  weight: over 570 kg
+  reproduction: ovoviviparous
+  habitat: temperate and tropical waters worldwide
+  status: EN
+  status_class: end
+  description: The shortfin mako or mako shark is the fastest and most areodynamic shark in the world, in fact it can swim up to a 
+                speed of 75 km/h due to its symmetrical tail and warm-blooded circulation. Due to its agility and characteristic teeth,
+                it is also used to hunt fast fish such as tuna, marlin and swordfish.
+  wave: images/wave-haikei3-cropped.svg
+
+- id: wshark
+  name: Whale Shark
+  image: images/whale.jpg
+  image_position: before
+  scientific_name: Rhincodon Typus
+  order: Orectolobiformes
+  length: up to 14 meters
+  weight: over 12 tons
+  reproduction: ovoviviparous
+  habitat: temperate and tropical waters worldwide
+  status: EN
+  status_class: end
+  description: The whale shark is the fish as well as the largest shark in the world. It is called a whale precisely because of its 
+                            affinity with the large mammal; it is in fact a filter-feeder, feeding on plankton and small fish that it sucks up 
+                            through its many rows of tiny teeth. It is therefore harmless to humans. It swims very slowly and is a solitary animal.
+  wave: images/wave-haikei-dark-cropped.svg
+
+- id: bkshark
+  name: Basking Shark
+  image: images/bask.jpg
+  image_position: after
+  scientific_name: Cetorhinus Maximus
+  order: Lamniformes
+  length: about 10 meters
+  weight: over 6 tons
+  reproduction: ovoviviparous
+  habitat: temperate or cold waters around the world
+  status: EN
+  status_class: end
+  description: The basking shark is the second largest fish and, like the whale shark, filters plankton and small fish from the water
+                            thanks to its large mouth. They are rather slow and not very agile animals that do not fear human presence, however, 
+                            they are capable of jumping out of the water, for example to get rid of parasites. During warmer hours, however, 
+                            they stay on the surface to simply rest in the sun.
+  wave: images/wave-haikei-light-cropped.svg
+
+- id: lshark
+  name: Leuca Shark
+  image: images/leuca.jpg
+  image_position: before
+  scientific_name: Carcharhinus Leucas
+  order: Carcharhiniformes
+  length: maximum 3.5 meters
+  weight: also more than 200 kg
+  reproduction: viviparous
+  habitat: tropical and subtropical waters, including fresh waters, worldwide
+  status: NT
+  status_class: nt
+  description: "The Leuca or Zambezi Shark is considered the most dangerous shark ever to humans because of its unpredictable, 
+                skittish and often aggressive behavior. This fish with a robust physique also has a peculiarity: it can in fact 
+                venture unhindered into the fresh waters of rivers and lakes for thousands of kilometers."
+  wave: images/wave-haikei3-cropped.svg
+
+- id: wtrshark
+  name: Whitetip Reef Shark
+  image: images/whitetip.jpg
+  image_position: after
+  scientific_name: Triaenodon Obesus
+  order: Carcharhiniformes
+  length: no more than 160 cm
+  weight: about 10 kg
+  reproduction: viviparous
+  habitat: tropical waters of the Indian and Pacific oceans
+  status: VU
+  status_class: vul
+  description: The Whitetip Reef Shark is a relatively small shark species named for its distinctive white dorsal and pelvic fins.
+                            This shark is known for its relatively shy nature and rarely poses a threat to humans. It is often spotted in 
+                            shallow waters near coral reefs, where it hunts fish and small marine organisms.
+  wave: images/wave-haikei-dark-cropped.svg
+
+- id: btrshark
+  name: Blacktip Reef Shark
+  image: images/black.jpg
+  image_position: before
+  scientific_name: Carcharhinus Melanopterus
+  order: Carcharhiniformes
+  length: up to 2 meters
+  weight: about 45 kg
+  reproduction: viviparous
+  habitat: tropical waters of the Indian and Pacific oceans
+  status: VU
+  status_class: vul
+  description: The Blacktip Reef Shark gets its name from its distinctly black dorsal fins and secondary fins. This shark is known for
+                            its curious but solitary behavior, often encountered near coral reefs and ocean platforms. It is a marine predator, 
+                            primarily hunting fish and other marine prey, but usually poses no threat to humans.
+  wave: images/wave-haikei-light-cropped.svg
+
+- id: blshark
+  name: Bull Shark
+  image: images/bull.jpg
+  image_position: after
+  scientific_name: Carcharias Taurus
+  order: Lamniformes
+  length: 3-4 meters
+  weight: about 230 kg
+  reproduction: ovoviviparous
+  habitat: coastal and oceanic waters worldwide
+  status: CR
+  status_class: crit
+  description: The bull shark is a majestic species of shark that inhabits ocean waters in different parts of the world. This marine 
+                            predator is known for its large, robust body and broad snout. Although it may look imposing, it is considered not very 
+                            dangerous and feeds mainly on fish and marine carcasses. Bull sharks are important to the balance of marine ecosystems and 
+                            are the subject of scientific research because of their unique biology.
+  wave: images/wave-haikei3-cropped.svg
+
+- id: tsshark
+  name: Thresher Shark
+  image: images/thresher.jpg
+  image_position: before
+  scientific_name: Alopias Vulpinus
+  order: Lamniformes
+  length: around 3-4 meters
+  weight: 230-250 kg
+  reproduction: ovoviviparous
+  habitat: temperate and tropical waters worldwide
+  status: VU
+  status_class: vul
+  description: The Thresher Shark is a marine predator characterized by a long, sickle-shaped dorsal fin. It is known for its elegant
+                            swimming and can leap out of the water in spectacular acrobatics. It is primarily a fish hunter, but occasionally 
+                            feeds on other marine prey. It does not normally attack humans, but if wounded and hooked it can deliver powerful tail
+                            strikes.
+  wave: images/wave-haikei-dark-cropped.svg
+
+- id: ghshark
+  name: Greater Hammerhead Shark
+  image: images/hamm.jpg
+  image_position: after
+  scientific_name: Sphyrna Mokarran
+  order: Carcharhiniformes
+  length: 4 meters
+  weight: 350 kg
+  reproduction: viviparous
+  habitat: temperate or cold waters around the world
+  status: CR
+  status_class: crit
+  description: The Hammerhead Shark is a fascinating species characterized by its distinctive T-shaped head shape. These sharks are 
+                            found in different parts of the world, from tropical to temperate waters. They are agile fishermen and feed mainly on 
+                            fish and other marine prey. The hammer-shaped head structure provides better vision and hunting ability. These sharks 
+                            are essential to marine ecosystems and often attract the attention of divers and marine life enthusiasts.
+  wave: images/wave-haikei-light-cropped.svg
+
+- id: scshark
+  name: Spotted Carpet Shark
+  image: images/carpet.jpeg
+  image_position: before
+  scientific_name: Orectolobus Maculatus
+  order: Orectolobiformes
+  length: maximum 3 meters
+  weight: \-
+  reproduction: ovoviviparous
+  habitat: Australia, New Zealand, Japan, China
+  status: NT
+  status_class: nt
+  description: The spotted carpet shark is a small shark species known for its unique livery, with brown and white spots that make it
+                            resemble a spotted carpet. Spotted carpet sharks are known to be tranquil and feed mainly on crustaceans, fish and 
+                            small marine invertebrates, which they catch by blending in with the seafloor. They are often encountered in areas 
+                            with sandy or muddy bottoms.
+  wave: images/wave-haikei3-cropped.svg

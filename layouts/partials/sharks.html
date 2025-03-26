@@ -1,0 +1,24 @@
+<div class="shark" id="{{ .id }}">
+    <h3>{{ .name }}</h3>
+    <div class="flex-shark">
+        {{ if eq .image_position "before" }}
+            <img src="{{ .image | relURL }}" height="200em" alt="{{ .name }}">
+        {{end}}
+        <div class="content">
+            <ul class="shark-data">
+                <li><b>Scientific name:</b> {{ .scientific_name }}</li>
+                <li><b>Order:</b> {{ .order }}</li>
+                <li><b>Length:</b> {{ .length }}</li>
+                <li><b>Weight:</b> {{ .weight }}</li>
+                <li><b>Reproduction:</b> {{ .reproduction }}</li>
+                <li><b>Habitat:</b> {{ .habitat }}</li>
+                <li><b>Status:</b> <span class="st-leg {{ .status_class }}">{{ .status }}</span></li>
+            </ul>
+            <p>{{ .description }}</p>
+        </div>
+        {{ if eq .image_position "after" }}
+            <img src="{{ .image | relURL }}" height="200em" alt="{{ .name }}">
+        {{end}}
+    </div>
+</div>
+<img src="{{ .wave | relURL }}" class="abs" width= "100%" aria-hidden="true">
