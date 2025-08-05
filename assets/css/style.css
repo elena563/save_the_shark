@@ -27,7 +27,7 @@ header{
     flex-direction: column;
 }
 .blue{
-    background-color: #62B0FE;
+    background-color: #62B0FE !important;
 }
 .blue #menucont a:hover{
     color: #f5f5fa;
@@ -584,13 +584,13 @@ fieldset{
 }
 @media (max-width: 479px) and (min-width: 421px) {
     .svg{
-        top: 4.6em;
+        top: 5.2em;
     }
 }
 
 @media (max-width: 699px)and (min-width: 480px) {
     .svg{
-        top: 5.3em;
+        top: 5.5em;
     }
 }
 @media (max-width: 800px)and (min-width: 700px) {

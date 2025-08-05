@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://savetheshark.netlify.app/"
 languageCode = 'en-us'
 title = 'Save the Shark'
 disableKinds = ["taxonomy"]
