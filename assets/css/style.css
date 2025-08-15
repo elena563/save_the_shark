@@ -526,6 +526,11 @@ fieldset{
         height: 75vw;
     }
 }
+@media (max-width: 300px){
+    .svg{
+        top:6em !important;
+    }
+}
 @media (max-width: 350px){
     h2{
         font-size: 3.8em;
@@ -546,9 +551,10 @@ fieldset{
         height: 18px;
     }
     .svg{
-        top: 4em;
+        top: 4.9em;
     }
 }
+
 @media (max-width: 515px) {
     .links{
         flex-direction: column;
@@ -577,18 +583,14 @@ fieldset{
         height: 40vw;
     }
 }
-@media (max-width: 420px) and (min-width: 401px) {
-    .svg{
-        top: 4.6em;
-    }
-}
-@media (max-width: 479px) and (min-width: 421px) {
+
+@media (max-width: 471px) and (min-width: 401px) {
     .svg{
         top: 5.2em;
     }
 }
 
-@media (max-width: 699px)and (min-width: 480px) {
+@media (max-width: 699px)and (min-width: 472px) {
     .svg{
         top: 5.5em;
     }
