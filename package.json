@@ -1,0 +1,26 @@
+{
+  "name": "save_the_shark",
+  "version": "1.0.0",
+  "description": "This website is designed for the fictional no profit organization Save the Shark, dedicated to the preservation of the sea and its inhabitants, with a particular attention for sharks. Users can read about the association, its mission, goals and story, explore the charity merchandising and join the community with a form. In the \"discover\" section, many species of shark are shortly descripted and represented, in order to inform about an animal that is often poorly known. \r Save the Shark is a fictional association, this project website is not linked to any real one, every contact or specific information is fictional for illustrative purposes only.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elena563/save_the_shark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elena563/save_the_shark/issues"
+  },
+  "homepage": "https://github.com/elena563/save_the_shark#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "stripe": "^20.4.1"
+  }
+}

@@ -7,3 +7,11 @@ function show() {
         menu.classList.toggle("openmenu");
     }
 }
+
+async function donate(){
+    const res = await fetch("https://BACKEND_URL/create-checkout-session",{
+        method: "POST"
+    });
+    const data = await res.json();
+    window.location = data.url;
+}
