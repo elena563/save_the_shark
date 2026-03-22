@@ -8,10 +8,46 @@ function show() {
     }
 }
 
-async function donate(){
-    const res = await fetch("https://BACKEND_URL/create-checkout-session",{
-        method: "POST"
-    });
-    const data = await res.json();
-    window.location = data.url;
+async function donate(event){
+    event.preventDefault();
+    
+    const selectedRadio = document.querySelector('input[name="amount"]:checked');
+    let amount;
+    
+    if (!selectedRadio) {
+        alert('Please select a donation amount');
+        return;
+    }
+    
+    if (selectedRadio.value === 'insert') {
+        const customInput = document.getElementById('other');
+        amount = parseFloat(customInput.value);
+        
+        if (!amount || amount < 1) {
+            alert('Please enter a valid amount (minimum €1)');
+            return;
+        }
+    } else {
+        amount = parseFloat(selectedRadio.value);
+    }
+    
+    try {
+        const res = await fetch("http://localhost:3000/create-checkout-session", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ amount: amount })
+        });
+        
+        if (!res.ok) {
+            throw new Error('Failed to create checkout session');
+        }
+        
+        const data = await res.json();
+        window.location = data.url;
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+    }
 }
