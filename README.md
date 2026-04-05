@@ -9,7 +9,7 @@ Project sections:
 - Header with responsive navigation menu
 - Homepage (index): Hero section, about us section
 - Merch: charity merchandising store
-- Donate: donation gateway, join us contacting form
+- Donate: Stripe donation gateway, join us contacting form
 - Discover: shark species informative section
 - Footer with contacting information and social media icons
 

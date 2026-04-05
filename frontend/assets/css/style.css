@@ -137,7 +137,7 @@ h2{
     margin: 1.5em 0 1.5em 0;
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 .del{
     width: 100%;
@@ -225,7 +225,7 @@ footer{
 }
 .botn:hover{
     text-decoration: none;
-    background-color: #95C9FE;
+    background-color: #4398ed;
     cursor: pointer;
 }
 .ftbtn:hover{
@@ -384,7 +384,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6em 25px 0 25px;
+    padding: 2em 25px 0 25px;
 }
 .cont form {
     width: 700px;
@@ -395,7 +395,7 @@ h4{
 }
 form .row {
     display: flex;
-    gap: 15px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .row .column {
@@ -440,8 +440,9 @@ form .row {
     outline: none;
     border-radius: 6px;
     font-size: 17px;
-    color: #000;
+    color: #fff;
     margin-top: 5px;
+    font-weight: bold;
     cursor: pointer;
     transition: .5s;
 }

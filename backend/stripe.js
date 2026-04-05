@@ -1,11 +1,21 @@
 const express = require('express');
 const Stripe = require('stripe');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-app.use(express.static('public'));
+// CORS - permetti richieste dal frontend Hugo
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); // In produzione usa il tuo dominio specifico
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+    next();
+});
+
+// Serve file statici dalla cartella public (usa path assoluto)
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json()); 
 
 app.post('/create-checkout-session', async (req, res) => {
