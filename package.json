@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/stripe.js",
-    "dev": "nodemon backend/stripe.js"
+    "dev": "netlify dev",
+    "hugo": "cd frontend && hugo server"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,10 @@
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+    "serverless-http": "^3.2.0",
     "stripe": "^20.4.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "netlify-cli": "^17.0.0"
   }
 }

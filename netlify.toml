@@ -1,0 +1,11 @@
+[build]
+  command = "cd frontend && hugo"
+  publish = "frontend/public"
+  functions = "netlify/functions"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+
+[dev]
+  framework = "#static"
+  port = 8888

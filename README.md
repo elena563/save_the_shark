@@ -77,8 +77,7 @@ save_the_shark/
 
 ## Deployment
 
-- **Frontend**: Hosted on [Netlify](https://www.netlify.com/)
-- **Backend**: Hosted on [Back4App](https://www.back4app.com/)
+- **Frontend & Backend**: Hosted on [Netlify](https://www.netlify.com/) (Hugo + Serverless Functions)
 
 ## Contributions
 

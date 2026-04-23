@@ -1,7 +1,7 @@
-// Backend API Configuration
+// Backend API Configuration - Netlify Functions
 const BACKEND_URL = window.location.hostname === 'localhost' 
-    ? 'http://localhost:3000' 
-    : 'https://your-backend.back4app.io'; 
+    ? 'http://localhost:8888/.netlify/functions/stripe' 
+    : '/.netlify/functions/stripe';
 
 function show() {
     const menu = document.getElementById("menucont");
@@ -37,7 +37,7 @@ async function donate(event){
     }
     
     try {
-        const res = await fetch(`${BACKEND_URL}/create-checkout-session`, {
+        const res = await fetch(BACKEND_URL, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

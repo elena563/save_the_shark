@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Cancelled - Save the Sharks</title>
+    <title>Donation Successful - Save the Sharks</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
@@ -15,7 +15,7 @@
         
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #62B0FE 0%, #4398ed 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -37,13 +37,13 @@
             padding: 60px 40px;
             max-width: 600px;
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
         
-        .cancel-icon {
+        .success-icon {
             width: 80px;
             height: 80px;
-            background: #ef4444;
+            background: #10b981;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -52,7 +52,7 @@
             animation: scaleIn 0.5s ease-out;
         }
         
-        .cancel-icon svg {
+        .success-icon svg {
             width: 50px;
             height: 50px;
             stroke: white;
@@ -70,48 +70,29 @@
             color: #6b7280;
             font-size: 1.1em;
             line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        .buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 30px;
+            margin-bottom: 30px;
         }
         
         .botn {
+            width: 100%;
             padding: 12px 16px;
+            background: #62B0FE;
             border: none;
             text-decoration: none;
             outline: none;
             border-radius: 6px;
             font-size: 17px;
+            color: #fff;
+            margin-top: 5px;
             font-weight: bold;
             cursor: pointer;
             transition: .5s;
-            min-width: 150px;
         }
         
-        .botn-primary {
-            background: #62B0FE;
-            color: #fff;
-        }
-        
-        .botn-primary:hover {
+        .botn:hover{
             text-decoration: none;
             background-color: #4398ed;
-        }
-        
-        .botn-secondary {
-            background: #e5e7eb;
-            color: #1f2937;
-        }
-        
-        .botn-secondary:hover {
-            text-decoration: none;
-            background-color: #d1d5db;
+            cursor: pointer;
         }
         
         @keyframes scaleIn {
@@ -128,44 +109,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="cancel-icon">
+        <div class="success-icon">
             <svg viewBox="0 0 52 52">
-                <line x1="16" y1="16" x2="36" y2="36"/>
-                <line x1="36" y1="16" x2="16" y2="36"/>
+                <polyline points="14 27 22.5 35.5 38 20"/>
             </svg>
         </div>
         
-        <h1>Donation Cancelled</h1>
+        <h1>Thank You! 🦈</h1>
         
         <p>
-            Your donation was cancelled and no charges were made to your card.
+            Your generous donation has been successfully processed. 
+            Thanks to supporters like you, we can continue our mission 
+            to protect sharks and preserve our oceans for future generations.
         </p>
         
         <p>
-            We understand that circumstances change. If you'd like to support 
-            our mission in the future, we'll be here whenever you're ready.
+            You will receive a confirmation email shortly with your donation details.
         </p>
         
-        <div class="buttons">
-            <a href="/donate" id="tryAgainLink" class="botn botn-primary">Try Again</a>
-            <a href="/" id="homeLink" class="botn botn-secondary">Return to Homepage</a>
-        </div>
+        <a href="/" class="botn">Return to Homepage</a>
     </div>
-
-    <script>
-        // Fetch frontend URL from backend config
-        fetch('/api/config')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('tryAgainLink').href = data.frontendUrl + '/donate';
-                document.getElementById('homeLink').href = data.frontendUrl + '/';
-            })
-            .catch(error => {
-                console.error('Error loading config:', error);
-                // Fallback to root if config fails
-                document.getElementById('tryAgainLink').href = '/donate';
-                document.getElementById('homeLink').href = '/';
-            });
-    </script>
 </body>
 </html>
