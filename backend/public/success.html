@@ -127,7 +127,21 @@
             You will receive a confirmation email shortly with your donation details.
         </p>
         
-        <a href="http://localhost:1313/" class="botn">Return to Homepage</a>
+        <a href="/" id="homeLink" class="botn">Return to Homepage</a>
     </div>
+
+    <script>
+        // Fetch frontend URL from backend config
+        fetch('/api/config')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('homeLink').href = data.frontendUrl + '/';
+            })
+            .catch(error => {
+                console.error('Error loading config:', error);
+                // Fallback to root if config fails
+                document.getElementById('homeLink').href = '/';
+            });
+    </script>
 </body>
 </html>

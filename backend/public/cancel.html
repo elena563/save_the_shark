@@ -147,9 +147,25 @@
         </p>
         
         <div class="buttons">
-            <a href="http://localhost:1313/donate" class="botn botn-primary">Try Again</a>
-            <a href="http://localhost:1313/" class="botn botn-secondary">Return to Homepage</a>
+            <a href="/donate" id="tryAgainLink" class="botn botn-primary">Try Again</a>
+            <a href="/" id="homeLink" class="botn botn-secondary">Return to Homepage</a>
         </div>
     </div>
+
+    <script>
+        // Fetch frontend URL from backend config
+        fetch('/api/config')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('tryAgainLink').href = data.frontendUrl + '/donate';
+                document.getElementById('homeLink').href = data.frontendUrl + '/';
+            })
+            .catch(error => {
+                console.error('Error loading config:', error);
+                // Fallback to root if config fails
+                document.getElementById('tryAgainLink').href = '/donate';
+                document.getElementById('homeLink').href = '/';
+            });
+    </script>
 </body>
 </html>

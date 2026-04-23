@@ -6,6 +6,11 @@ require('dotenv').config();
 const app = express();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
+// Environment variables with defaults
+const PORT = process.env.PORT || 3000;
+const BACKEND_URL = process.env.BACKEND_URL || `http://localhost:${PORT}`;
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:1313';
+
 // CORS - permetti richieste dal frontend Hugo
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'); // In produzione usa il tuo dominio specifico
@@ -48,8 +53,8 @@ app.post('/create-checkout-session', async (req, res) => {
                     quantity: 1,
                 },
             ],
-            success_url: 'http://localhost:3000/success.html',
-            cancel_url: 'http://localhost:3000/cancel.html',
+            success_url: `${BACKEND_URL}/success.html`,
+            cancel_url: `${BACKEND_URL}/cancel.html`,
         });
         
         res.json({ url: session.url });
@@ -59,4 +64,8 @@ app.post('/create-checkout-session', async (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log('Server is running on port 3000'));
+app.get('/api/config', (req, res) => {
+    res.json({ frontendUrl: FRONTEND_URL });
+});
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

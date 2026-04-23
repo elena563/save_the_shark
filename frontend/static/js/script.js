@@ -1,3 +1,8 @@
+// Backend API Configuration
+const BACKEND_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000' 
+    : 'https://your-backend.back4app.io'; 
+
 function show() {
     const menu = document.getElementById("menucont");
     const isMobile = window.matchMedia("(max-width: 800px)").matches;
@@ -32,7 +37,7 @@ async function donate(event){
     }
     
     try {
-        const res = await fetch("http://localhost:3000/create-checkout-session", {
+        const res = await fetch(`${BACKEND_URL}/create-checkout-session`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

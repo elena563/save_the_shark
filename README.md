@@ -75,7 +75,10 @@ save_the_shark/
 └── package.json          # Node.js dependencies
 ```
 
+## Deployment
 
+- **Frontend**: Hosted on [Netlify](https://www.netlify.com/)
+- **Backend**: Hosted on [Back4App](https://www.back4app.com/)
 
 ## Contributions
 
